@@ -109,7 +109,7 @@
                         <Button x:Name="FishIncrement" Content="+" HorizontalAlignment="Left" Margin="362,12,-14,0" VerticalAlignment="Top" Height="78" Width="108" Background="{StaticResource PhoneAccentBrush}" Click="FishIncrement_Click" Style="{StaticResource PressedButton}"/>
                     </Grid>
                     <Grid Height="100">
-                        <TextBox x:Name="AngularName" HorizontalAlignment="Left" Height="80" Margin="80,10,0,0" TextWrapping="Wrap" Text="Angular Name" VerticalAlignment="Top" Width="308" SelectionBackground="Black" Background="#BF000000" BorderBrush="#BF000000" Foreground="White" SelectionForeground="White" GotFocus="AngularName_GotFocus" TextAlignment="Center" FontSize="24" LostFocus="AngularName_LostFocus"/>
+                        <TextBox x:Name="AngularName" HorizontalAlignment="Left" Height="80" Margin="80,10,0,0" TextWrapping="Wrap" Text="Angler Name" VerticalAlignment="Top" Width="308" SelectionBackground="Black" Background="#BF000000" BorderBrush="#BF000000" Foreground="White" SelectionForeground="White" GotFocus="AngularName_GotFocus" TextAlignment="Center" FontSize="24" LostFocus="AngularName_LostFocus"/>
                         <Button x:Name="ClearAngular" Content="Clear" HorizontalAlignment="Left" Margin="0,12,0,0" VerticalAlignment="Top" Height="78" Width="108" Background="{StaticResource PhoneAccentBrush}" Style="{StaticResource PressedButton}" Click="ClearAngular_Click"/>
                         <Button x:Name="AddAngular" Content="Add" HorizontalAlignment="Left" Margin="362,12,-5,0" VerticalAlignment="Top" Height="78" Width="108" Background="{StaticResource PhoneAccentBrush}" Style="{StaticResource PressedButton}" Click="AddAngular_Click"/>
                     </Grid>
@@ -128,6 +128,7 @@
                         </ScrollViewer>
                     </Grid>
                 </StackPanel>
+                
                 <!--Double line list with text wrapping-->
             </phone:PivotItem>
 
@@ -141,14 +142,13 @@
                     </Grid>
                     <Grid Height="270">
                         <ScrollViewer>
-                            <TextBlock x:Name="Summary_Angulars" TextWrapping="Wrap" Text="Summary of Angulars"/>
+                            <TextBlock x:Name="Summary_Angulars" TextWrapping="Wrap" Text="Summary of Anglers"/>
                         </ScrollViewer>
                     </Grid>
                 </StackPanel>
                 <!--Double line list no text wrapping-->
             </phone:PivotItem>
-        </phone:Pivot>
-
+        </phone:Pivot> 
         <!--Uncomment to see an alignment grid to help ensure your controls are
             aligned on common boundaries.  The image has a top margin of -32px to
             account for the System Tray. Set this to 0 (or remove the margin altogether)

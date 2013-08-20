@@ -91,14 +91,12 @@ namespace Fish_Eyes
 
         private void AngularName_LostFocus(object sender, RoutedEventArgs e)
         {
-            AngularName.Text = "Angular Name";
             AngularName.Background = new SolidColorBrush(Colors.Black);
             AngularName.Foreground = new SolidColorBrush(Colors.White);
         }
 
         private void FishName_LostFocus(object sender, RoutedEventArgs e)
         {
-            FishName.Text = "Fish Name";
             FishName.Background = new SolidColorBrush(Colors.Black);
             FishName.Foreground = new SolidColorBrush(Colors.White);
         }
@@ -169,7 +167,7 @@ namespace Fish_Eyes
                 {
                     longlines.AppendLine(kvp.Key.ToString() + " Count: " + kvp.Value.ToString());
                 }
-                tbl.Text = "Fish Leaderboard" + '\n' + longlines.ToString();
+                tbl.Text = longlines.ToString();
             }
             totalNumbers();
         }
@@ -195,7 +193,7 @@ namespace Fish_Eyes
                 {
                     longlines.AppendLine(kvp.Key.ToString() + " Count: " + kvp.Value.ToString());
                 }
-                tbl.Text = "Angular Leaderboard" + '\n' + longlines.ToString();
+                tbl.Text = longlines.ToString();
             }
             totalNumbers();
         }
