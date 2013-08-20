@@ -89,16 +89,34 @@ namespace Fish_Eyes
             AngularName.Foreground = new SolidColorBrush(Colors.White);
         }
 
+        private void AngularName_LostFocus(object sender, RoutedEventArgs e)
+        {
+            AngularName.Text = "Angular Name";
+            AngularName.Background = new SolidColorBrush(Colors.Black);
+            AngularName.Foreground = new SolidColorBrush(Colors.White);
+        }
+
+        private void FishName_LostFocus(object sender, RoutedEventArgs e)
+        {
+            FishName.Text = "Fish Name";
+            FishName.Background = new SolidColorBrush(Colors.Black);
+            FishName.Foreground = new SolidColorBrush(Colors.White);
+        }
+
         private void FishClear_Click(object sender, RoutedEventArgs e)
         {
             FishListDic.Clear();
             FishList.Items.Clear();
+            Summary_All.Text = "Leaderboard";
+            Summary_Fish.Text = "Fish Leaderboard";
         }
 
         private void ClearAngular_Click(object sender, RoutedEventArgs e)
         {
             AngularListDic.Clear();
             AngularList.Items.Clear();
+            Summary_All.Text = "Leaderboard";
+            Summary_Angulars.Text = "Angular Leaderboard";
         }
 
         
@@ -201,7 +219,11 @@ namespace Fish_Eyes
             }
             Summary_All.Text = longlines.ToString();
 
-        }      
+        }
+
+        
+
+         
 
         
     }

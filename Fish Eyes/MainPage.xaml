@@ -13,7 +13,7 @@
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait"  Orientation="Portrait"
     shell:SystemTray.IsVisible="True">
-    
+
     <phone:PhoneApplicationPage.Resources>
         <Style x:Key="PressedButton" TargetType="Button">
             <Setter Property="Background" Value="Transparent"/>
@@ -95,13 +95,13 @@
             <phone:PivotItem Header="Fish On!"  Margin="10,29,14,-1">
                 <StackPanel x:Name ="sp" Height="603" VerticalAlignment="Top" Width="456">
                     <Grid Height="100">
-                        <TextBox x:Name="FishName" HorizontalAlignment="Left" Height="78" Margin="83,12,0,0" TextWrapping="Wrap" Text="Fish Name" VerticalAlignment="Top" Width="305" SelectionBackground="Black" Background="#BF000000" BorderBrush="#BF000000" Foreground="White" SelectionForeground="White" GotFocus="FishName_GotFocus" TextAlignment="Center"/>
+                        <TextBox x:Name="FishName" HorizontalAlignment="Left" Height="78" Margin="83,12,0,0" TextWrapping="Wrap" Text="Fish Name" VerticalAlignment="Top" Width="305" SelectionBackground="Black" Background="#BF000000" BorderBrush="#BF000000" Foreground="White" SelectionForeground="White" GotFocus="FishName_GotFocus" TextAlignment="Center" LostFocus="FishName_LostFocus"/>
                         <Button x:Name="FishClear" Content="Clear" HorizontalAlignment="Left" Margin="0,12,0,0" VerticalAlignment="Top" Height="78" Width="108" Background="{StaticResource PhoneAccentBrush}" Style="{StaticResource PressedButton}" Click="FishClear_Click"/>
                         <Button x:Name="FishAdd" Content="Add" HorizontalAlignment="Left" Margin="362,12,-5,0" VerticalAlignment="Top" Height="78" Width="108" Background="{StaticResource PhoneAccentBrush}" Style="{StaticResource PressedButton}" Click="FishAdd_Click"/>
                     </Grid>
                     <Grid Height="100">
                         <Button x:Name="FishDecrement" Content="-" HorizontalAlignment="Left" Margin="0,12,0,0" VerticalAlignment="Top" Height="78" Width="108" Background="{StaticResource PhoneAccentBrush}" Click="FishDecrement_Click" Style="{StaticResource PressedButton}"/>
-                        <toolkit:ListPicker x:Name="FishList" HorizontalAlignment="Left" Margin="97,12,0,30" Width="276" RenderTransformOrigin="0.5,0.5" ItemCountThreshold="1" Foreground="White" Background="#BF838383">
+                        <toolkit:ListPicker x:Name="FishList" HorizontalAlignment="Left" Margin="94,12,0,30" Width="282" RenderTransformOrigin="0.5,0.5" ItemCountThreshold="1" Foreground="White" Background="#BF838383">
                             <toolkit:ListPicker.RenderTransform>
                                 <CompositeTransform TranslateY="5.956"/>
                             </toolkit:ListPicker.RenderTransform>
@@ -109,7 +109,7 @@
                         <Button x:Name="FishIncrement" Content="+" HorizontalAlignment="Left" Margin="362,12,-14,0" VerticalAlignment="Top" Height="78" Width="108" Background="{StaticResource PhoneAccentBrush}" Click="FishIncrement_Click" Style="{StaticResource PressedButton}"/>
                     </Grid>
                     <Grid Height="100">
-                        <TextBox x:Name="AngularName" HorizontalAlignment="Left" Height="78" Margin="96,15,0,0" TextWrapping="Wrap" Text="Angular Name" VerticalAlignment="Top" Width="276" SelectionBackground="Black" Background="#BF000000" BorderBrush="#BF000000" Foreground="White" SelectionForeground="White" GotFocus="AngularName_GotFocus" TextAlignment="Center" FontSize="24"/>
+                        <TextBox x:Name="AngularName" HorizontalAlignment="Left" Height="80" Margin="80,10,0,0" TextWrapping="Wrap" Text="Angular Name" VerticalAlignment="Top" Width="308" SelectionBackground="Black" Background="#BF000000" BorderBrush="#BF000000" Foreground="White" SelectionForeground="White" GotFocus="AngularName_GotFocus" TextAlignment="Center" FontSize="24" LostFocus="AngularName_LostFocus"/>
                         <Button x:Name="ClearAngular" Content="Clear" HorizontalAlignment="Left" Margin="0,12,0,0" VerticalAlignment="Top" Height="78" Width="108" Background="{StaticResource PhoneAccentBrush}" Style="{StaticResource PressedButton}" Click="ClearAngular_Click"/>
                         <Button x:Name="AddAngular" Content="Add" HorizontalAlignment="Left" Margin="362,12,-5,0" VerticalAlignment="Top" Height="78" Width="108" Background="{StaticResource PhoneAccentBrush}" Style="{StaticResource PressedButton}" Click="AddAngular_Click"/>
                     </Grid>
@@ -124,8 +124,8 @@
                     </Grid>
                     <Grid Height="200">
                         <ScrollViewer>
-                       <TextBlock x:Name="Summary_All" TextWrapping="Wrap" Text="Leaderboard" Width="436"/>
-                      </ScrollViewer>
+                            <TextBlock x:Name="Summary_All" TextWrapping="Wrap" Text="Leaderboard" Width="436"/>
+                        </ScrollViewer>
                     </Grid>
                 </StackPanel>
                 <!--Double line list with text wrapping-->
@@ -157,7 +157,7 @@
             Before shipping remove this XAML and the image itself.-->
         <!--<Image Source="/Assets/AlignmentGrid.png" VerticalAlignment="Top" Height="800" Width="480" Margin="0,-32,0,0" Grid.Row="0" IsHitTestVisible="False" />-->
     </Grid>
-    
-   
+
+
 </phone:PhoneApplicationPage>
     
